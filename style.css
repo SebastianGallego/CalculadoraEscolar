@@ -12,7 +12,7 @@ background-color: rgba(75, 74, 71, 0.894);
 
 .btn {
 width: 320px ;
-
+font-size: 24px;
 }
 
 .logo {
@@ -20,4 +20,7 @@ width: 320px ;
 
 }
 
+.enunciado {
+    width: 75%;
+    }
 
