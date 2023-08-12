@@ -34,18 +34,41 @@
 
         </div>
 
-        <div class="container-fluid d-flex mt-5 ">
+        <div class="container-fluid flex-column mt-5 ">
             <h1 class="titulo text-center ">Calculadora de Aprobación Escolar</h1>
-
+            <h1 class="titulo text-center ">Versión 1</h1>
         </div>
-
-
-
     </main>
 
+    <section class="ingresoDatos mt-5 d-flex justify-content-center ">
+        <div class="container-fluid containerIngresoDatos">
+            <label for="numero">Ingresa un número entre 0 y 100:</label>
+            <input type="text" id="inputNota" maxlength="3" class="inputIngresoNota ms-3 text-center">
+            <div id="txtResultadoNota" class="alert alert-danger m-3 text-center" role="alert"></div>
+            <div id="txtMensaje" class="alert alert-secondary m-3 text-center" role="alert">"Devolución Nota"</div>
 
 
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="trabajosPracticos">
+                <label class="form-check-label" for="">
+                    Entregó todos los trabajos Prácticos?
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="asistencia">
+                <label class="form-check-label" for="">
+                    Asistió a todas las clases?
+                </label>
+            </div>
+            <div id="txtResultadoTpAsistencia" class="alert alert-danger m-3 text-center" role="alert">"Debe mejorar la
+                asistencia y la entrega de trabajos para la próxima evaluación"</div>
+        </div>
 
+    </section>
+
+    <section class="volver mt-5 d-flex justify-content-center ">
+        <button id="btnVolver" type="button" class=" btn btn-dark ">Volver a la Página Principal</button>
+    </section>
 
 
 
